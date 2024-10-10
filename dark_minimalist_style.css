@@ -1,0 +1,133 @@
+/* Normalisation et police globale */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e0e0e0;  /* Texte gris clair tendant vers le blanc */
+    background-color: #2c2c2e;  /* Fond gris foncé */
+    padding: 40px;
+    margin: 0;
+}
+
+/* Titres : légèrement en gras avec un bon espacement */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;  /* Titres en blanc pur */
+    font-weight: 500; /* Légèrement en gras */
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+}
+
+h1 {
+    font-size: 28px;
+    border-bottom: 2px solid #4d4d4f;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 30px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #4d4d4f;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Paragraphes */
+p {
+    margin: 10px 0;
+}
+
+/* Liens */
+a {
+    color: #1a73e8;  /* Liens en bleu pour le contraste */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Citations (blockquote) */
+blockquote {
+    color: #d0d0d0;  /* Couleur légèrement plus sombre pour les citations */
+    font-style: italic;
+    border-left: 4px solid #555;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+/* Code inline */
+code {
+    background-color: #3e3e40;  /* Fond légèrement plus clair pour le code inline */
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    color: #ffffff;/* Normalisation et police globale */
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;  /* Légèrement agrandi pour un effet de zoom */
+        line-height: 1.6;
+        color: #e0e0e0;  /* Texte gris clair tendant vers le blanc */
+        background-color: #000000;  /* Fond noir sur les côtés */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;  /* Centrer horizontalement */
+    }
+    
+    /* Conteneur central pour le contenu */
+    .container {
+        width: 60%;  /* Largeur du texte */
+        max-width: 900px;  /* Limite maximale de la largeur */
+        background-color: #2c2c2e;  /* Fond gris foncé */
+        padding: 40px;
+        margin: 40px 0;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Ombre subtile pour séparer du fond */
+        border-radius: 8px; /* Bord légèrement arrondi */
+    }
+    
+    
+    /* Blocs de code (pre) */
+    pre {
+        background-color: #3e3e40;  /* Fond des blocs de code plus clair */
+        padding: 12px;
+        border-radius: 6px;  /* Bord arrondi */
+        overflow: auto;
+        font-family: "Courier New", monospace;
+        color: #ffffff;
+    }
+    
+    pre code {
+        font-size: 13px;
+        color: #ffffff;
+    }
+    
+    /* Listes */
+    ul, ol {
+        margin: 15px 0;
+        padding-left: 20px;
+    }
+    
+    ul li {
+        margin-bottom: 5px;
+    }
+    
+    /* Ajustement du style pour les écrans plus petits */
+    @media (max-width: 768px) {
+        .container {
+            width: 85%;  /* Réduction de la largeur sur les petits écrans */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .container {
+            width: 100%;  /* Sur mobile, occuper toute la largeur */
+            padding: 20px;
+        }
+    }
+    
+}
